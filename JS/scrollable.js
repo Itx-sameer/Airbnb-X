@@ -1,14 +1,24 @@
-let section = document.querySelector('section');
-for(let i = 0; i < 600; i++){
-    let div = document.createElement('div');
-    section.appendChild(div);
-}
-document.addEventListener("mousemove",function(e){
-    document.querySelectorAll("div").forEach(div => {
-        let x = (div.offsetLeft) - e.pageX;
-        let y = (div.offsetTop) - e.pageY;
-        let dist = Math.sqrt(x*x + y*y);
-        let score = Math.exp(dist * -0.01);
-        div.style.transform = "scale(" + score*1 +")"
-    })
+const container = document.getElementById('scroll-container');
+const iconNames = [
+  "Countryside", "OMG!", "Lakefront", "Caves", "Treehouse", "Rooms", "Farms", 
+  "Pools", "Views", "Beach", "Cabins", "HistoricalHomes", 
+  "Beachfront", "TinyHomes", "Design", "Beds&Breakfast", "Trending", 
+  "Tropical", "Luxe", "Castles"
+];
+
+iconNames.forEach((name, index) => {
+  const iconDiv = document.createElement('div');
+  iconDiv.className = 'icon';
+  iconDiv.innerHTML = `
+    <img src="iAir/nav-icons/${index + 1}.jpg" alt="${name}">
+    <br>${name}
+  `;
+
+
+  iconDiv.addEventListener('click', () => {
+    document.querySelectorAll('.icon').forEach(icon => icon.classList.remove('active'));
+    iconDiv.classList.add('active');
+  });
+
+  container.appendChild(iconDiv);
 });
