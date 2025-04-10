@@ -1,0 +1,32 @@
+.image-container{
+    width: 314px;
+    height: 393px;
+    position: relative;
+    
+    .parent-image{
+      width: 350px;
+      height: 330px;
+      object-fit: cover;
+      border-radius: 10px;
+
+    }
+    .child-image{
+        position: absolute;
+        height: 24px;
+        width: 24px;
+        bottom: 360px;
+       left: 310px;
+        filter: invert(1) sepia(1) saturate(10000%) hue-rotate(180deg);
+      }
+}
+.image-details{
+    display: flex;
+    justify-content: space-between;
+    p{
+        font-size: 20px;
+        margin: 0;
+    }
+}
+.image-detail-dark{
+  font-weight: 300;
+}
