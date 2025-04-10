@@ -24,11 +24,17 @@
     justify-content: space-between;
     p{
         font-size: 20px;
+        color: #333;
         margin: 0;
     }
 }
 .image-detail-dark{
-  font-weight: 300;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+  font-weight: 600;
+}
+.image-detail-light{
+    color: #333;
 }
 .grid-image {
     display: grid;
