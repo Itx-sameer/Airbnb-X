@@ -30,3 +30,18 @@
 .image-detail-dark{
   font-weight: 300;
 }
+.grid-image {
+    display: grid;
+    grid-template-columns: repeat(4,1fr); 
+    gap: 30px;
+    row-gap: 40px;
+    margin-top: 16px;
+    box-sizing: border-box;
+}
+
+    .icon-btn{
+      border: none;
+        background-color: transparent;
+    
+    }
+
