@@ -2,10 +2,12 @@
     font-family: Arial, sans-serif;
     margin: 0;
     width: 100%;
-    padding-left: 40px;
-    padding-right: 40px;
+    height: auto;
+    padding-left: 80px;
+    padding-right: 80px;
     /* padding: 0px 80px 0px 80px ; */
-    overflow-x: auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
   }
 
 .scroll-container {

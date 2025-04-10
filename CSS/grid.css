@@ -4,7 +4,7 @@
     position: relative;
     
     .parent-image{
-      width: 350px;
+      width: 330px;
       height: 330px;
       object-fit: cover;
       border-radius: 10px;
@@ -15,7 +15,7 @@
         height: 24px;
         width: 24px;
         bottom: 360px;
-       left: 310px;
+       left: 298px;
         filter: invert(1) sepia(1) saturate(10000%) hue-rotate(180deg);
       }
 }
