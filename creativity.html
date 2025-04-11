@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+    background-image: url('img/bg4.jpg'); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center; 
+    overflow-x: hidden;
+}
+/* nav stART */
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 20px;
+                background-color: #333;
+                color: white;
+                height: 60px;
+            }
+            .navbar .logo {
+                font-size: 24px;
+                font-weight: bold;
+                color: #fff;
+                text-decoration: none;
+            }
+            .navbar .search-bar {
+               
+                width: 500px;
+                margin: 0 20px;
+            }
+            .navbar .search-bar input {
+                width: 100%;
+                padding: 8px 10px;
+                border-radius: 4px;
+                border: none;
+                outline: none;
+            }
+            .navbar .nav-links {
+                display: flex;
+                gap: 15px;
+            }
+            .navbar .nav-links a {
+                text-decoration: none;
+                color: white;
+                padding: 8px 12px;
+                border-radius: 4px;
+                transition: background-color 0.3s;
+            }
+            .navbar .nav-links a:hover {
+                background-color: #555;
+            }
+
+/* nav */
+        .topTOfoot {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.up-foot {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.up-foot h1 {
+    color: #06d3fc;
+    font-size: 4.44vh;
+}
+
+.up-foot p {
+    color: #c4cccec4;
+    font-size: 1.5em;
+}
+
+.sign-up {
+    background-color: rgba(9, 6, 6, 0.356);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px);
+}
+
+.sign-up-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.email-input {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+.sign-up button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: 2px solid #efeaea;
+    border-radius: 4px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sign-up button:hover {
+    background-color: #138af2;
+    color: #fff;
+}
+
+.sign-up h4 {
+    color: white;
+    margin: 0;
+}
+
+.hr {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    width: 100%;
+    height: 36rem;
+    background-color: #3c3b3bcf;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.com-name {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.com-name h1 {
+    color: #06d3fc;
+    margin: 0;
+    font-size: 2.5em;
+}
+.use-link ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+}
+.use-link li {
+    margin: 0 25px; 
+}
+.use-link a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+.o-icon {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.o-icon ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+.o-icon li {
+    margin: 0 10px;
+}
+.o-icon a {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.feedback-textarea {
+    width: 80%;
+    max-width: 400px;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+.feedback-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+.feedback-button:hover {
+    background-color: #45a049;
+}
+.copy {
+    text-align: center;
+    margin-top: 20px;
+}
+.copy p {
+    margin: 0;
+}
+.copy span {
+    font-weight: bold;
+    color: yellow;
+}
+
+.foot-bottom {
+    height: 4.5rem;
+    width: 100%;
+    color: white;
+    background-color: #1c1a1a;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot-bottom ul li {
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+ul li a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+ul li {
+    list-style-type: none;
+    
+}
+ul i{
+    font-weight: bold;
+}
+
+.icon {
+    display: flex;
+    
+    
+}
+.icon1 , .icon2 , .icon3 ,.icon4{
+    font-size: 1.5em;
+}
+
+.icon2:hover {
+    color: #007bff;
+}
+.icon3:hover {
+    color: #0088cc;
+}
+.icon4:hover {
+    color: #cb1426;
+}
+
+.icon1:hover {
+    display: inline-block;
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background-clip: text;
+    color: transparent;
+}
+
+/* three-div-style */
+.three-div {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .image-container {
+            margin: 20px;
+            position: relative;
+            width: 80%;
+            height: 200px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .button-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .button-overlay:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .main {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+        }
+
+
+    </style>
+</head>
+<body>
+         
+       
+        <nav class="navbar">
+            <a href="#" class="logo"><img src="iAir/logo.svg" alt="logo-image"></a>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+        <section class="three-div">
+            <div class="image-container">
+                <img src="https://www.travelandleisure.com/thmb/5KH1_3dKLruIyfz8XLdgLtuMp6I=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/TAL-hidden-haven-villa-south-africa-airbnb-NEWBNBCAT0123-0e3c6ef5dce0490aac7dd5cd92b27f33.jpg" alt="Example Image">
+                <button class="button-overlay">Details</button>
+            </div>
+
+            <div class="image-container">
+                <img src="https://a0.muscache.com/im/pictures/miso/Hosting-5095866/original/31e549ab-17bf-4f3d-96c7-ae3ebf193e50.jpeg?im_w=720&width=720&quality=70&auto=webp" alt="Example Image">
+                <button class="button-overlay">Details</button>
+            </div>
+    
+            <div class="image-container">
+                <img src="https://th.bing.com/th/id/OIP.LyU2iOf_UipS_vB4eJUc9QHaEx?w=2880&h=1856&rs=1&pid=ImgDetMain" alt="Example Image">
+                <button class="button-overlay">Details</button>
+            </div>
+    
+        </section>
+    
+
+    <div class="hr">
+        <hr style="width: 60%; color: azure; margin-top: 1rem; margin-bottom: 1rem;">
+    </div>
+
+
+    <section class="topTOfoot">
+        <div class="up-foot">
+            <h1>3000+ Hearts Aligned in AirBnb Homes</h1>
+            <p>Through AirBnb</p>
+            <div class="sign-up">
+                <form action="mailto:your-email@example.com" method="post" enctype="text/plain" class="sign-up-form">
+                    <input type="email" name="email" placeholder="Enter your email" required class="email-input">
+                    <button type="submit" class="sign-up">
+                        <h4>SIGN UP</h4>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="hr">
+        <hr style="width: 4%; color: azure;">
+    </div>
+    <footer>
+        <div class="com-name">
+            <h1>TRANSFORM 360</h1>
+        </div>
+        <div class="use-link">
+            <ul>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Airbnb</a></li>
+                <li><a href="#">IMAGES</a></li>
+                <li><a href="#">VIDEOS</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="o-icon">
+            <ul>
+                <li><a href="#" class="icon1"><i class="fa-brands fa-instagram" ></i></a></li>
+                <li><a href="#" class="icon2"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#" class="icon3"><i class="fa-brands fa-telegram"></i></a></li>
+                <li><a href="#" class="icon4"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </div>
+        <div class="feedback-form">
+            <textarea class="feedback-textarea" placeholder="Enter your feedback"></textarea>
+            <button type="submit" class="feedback-button">FEEDBACK</button>
+        </div>
+           
+        <div class="foot-bottom">
+            <ul>
+                <li><a href="#">Cookie Consent</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">&copy;2024 @AirBnb</a></li>
+            </ul>
+        </div>
+        <div class="copy">
+            <p>Copyright &copy;2025 All rights reserved | THANK YOU FOR VISITING <span>AirBnb</span></p>
+        </div>
+
+    </footer>
+</body>
+</html>
