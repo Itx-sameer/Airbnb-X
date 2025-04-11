@@ -172,6 +172,16 @@ const gridImage = document.getElementById("grid-image");
 
 gridImage.innerHTML = "";
 
+if (!imageData[category] || imageData[category].length === 0) {
+  const div = document.createElement("div");
+  div.className = "gif";
+  div.innerHTML = `<img src="iAir/Circles-menu-3.gif" alt="Loading GIF">`;
+  gridImage.appendChild(div);
+  // console.log(`Category "${category}" data not found`);
+  return;
+}
+
+
 let index = 0;
 
 imageData[category].forEach(element => {
@@ -197,6 +207,9 @@ div.innerHTML = `
       </div>
     </div>
   </div>`;
+  if(div.innerHTML == ""){
+    console.log("empty");
+  }
 gridImage.appendChild(div);
 index++;
 });
