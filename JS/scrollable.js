@@ -201,3 +201,7 @@ gridImage.appendChild(div);
 index++;
 });
 }
+document.addEventListener('DOMContentLoaded', () => {
+  const defaultCategory = 'countryside'; 
+  loadImage(defaultCategory);
+});

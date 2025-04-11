@@ -155,6 +155,7 @@ function loadContent(category) {
         div.innerHTML = `<div class="dark">${element.dark}</div><div class="light"><a href="${element.link}">${element.light}</a></div>`;
         grid.appendChild(div);
     });
+   
 }
 window.onload = function () {
     loadContent('popular');
