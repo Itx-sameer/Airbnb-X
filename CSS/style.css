@@ -103,6 +103,9 @@
     font-weight: bold;
     font-size: 1rem;
   }
+  header .login .login-f ul li a:hover{
+    color: blue;
+  }
   .f-li{
     display: flex;
     justify-content: center;
